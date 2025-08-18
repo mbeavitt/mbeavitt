@@ -34,27 +34,25 @@ jobs:
           plugin_languages_recent_days: 365
           plugin_languages_analysis_timeout: 30
           plugin_languages_analysis_timeout_repositories: 15
-          
+
           # Hide some noisy languages, but keep Shell
           plugin_languages_ignored: >
-            Jupyter Notebook, HTML, PHP, Makefile, CSS, C#, Hack, JSON, Markdown, Unity3D Asset, JavaScript, Pip Requirements, YAML, TOML, XML Property List, CSV, Text
+            Jupyter Notebook, HTML, PHP, Makefile, CSS, C#, Hack, JSON, Markdown, Unity3D Asset, Javascript, Pip Requirements, YAML, TOML, XML Property List, Csv, Text
 
           # Don’t group everything into “Other”
           plugin_languages_other: no
 
-          # --- Org / commit author settings ---
-          # Include repos you own, collaborate on, and belong to via org membership
+          # --- Org / private / commit author settings ---
+          # Broaden repository set to include orgs you’re a member of
           repositories_affiliations: owner, collaborator, organization_member
-          # Ensure your org commits are attributed in indepth mode
+          # Include private repos too (requires PAT with repo + read:org scopes)
+          repositories_private: yes
+          # Attribute commits to all your emails/usernames so indepth counts org work
           commits_authoring: >
             mbeavitt,
             mbeavitt@users.noreply.github.com,
             michael.beavitt@originsciences.com
-
-          # (Optional) If some key org repos still don’t appear, force-include them:
+          # (Optional) If some key repos still don’t appear, force-include them:
           # plugin_languages_indepth_custom: >
           #   origin-sciences/nextflow-pipeline,
           #   origin-sciences/another-repo@main
-
-          # (Optional) Tidy up noise from forks
-          # repositories_forks: no
