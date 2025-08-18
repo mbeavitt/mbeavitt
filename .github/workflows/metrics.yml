@@ -20,6 +20,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: Europe/London
 
+          # --- Languages plugin ---
           plugin_languages: yes
           plugin_languages_sections: most-used
           plugin_languages_indepth: yes
@@ -40,3 +41,18 @@ jobs:
 
           # Don’t group everything into “Other”
           plugin_languages_other: no
+
+          # --- Org / private / commit author settings ---
+          # Broaden repository set to include orgs you’re a member of
+          repositories_affiliations: owner, collaborator, organization_member
+          # Include private repos too (requires PAT with repo + read:org scopes)
+          repositories_private: yes
+          # Attribute commits to all your emails/usernames so indepth counts org work
+          commits_authoring: >
+            mbeavitt,
+            mbeavitt@users.noreply.github.com,
+            michael.beavitt@originsciences.com
+          # (Optional) If some key repos still don’t appear, force-include them:
+          # plugin_languages_indepth_custom: >
+          #   origin-sciences/nextflow-pipeline,
+          #   origin-sciences/another-repo@main
