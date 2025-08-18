@@ -37,7 +37,7 @@ jobs:
 
           # Hide some noisy languages, but keep Shell
           plugin_languages_ignored: >
-            Jupyter Notebook, HTML, TeX, PHP, Makefile, Typescript, MDX, CSS, C#, Hack, JSON, Markdown, Unity3D Asset, Vim Script, Javascript, Pip Requirements, YAML, TOML, XML Property List, Csv, Text
+            Jupyter Notebook, HTML, TeX, PHP, Makefile, Typescript, MDX, Dockerfile, CSS, C#, Hack, JSON, Markdown, Unity3D Asset, Vim Script, Javascript, Pip Requirements, YAML, TOML, XML Property List, Csv, Text
 
           # Don’t group everything into “Other”
           plugin_languages_other: no
