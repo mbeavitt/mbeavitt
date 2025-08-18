@@ -36,7 +36,7 @@ jobs:
 
           # Hide some noisy languages, but keep Shell
           plugin_languages_ignored: >
-            Jupyter Notebook, HTML, PHP, Makefile, CSS, C#, Hack, JSON, Markdown, Unity3D Asset
+            Jupyter Notebook, HTML, PHP, Makefile, CSS, C#, Hack, JSON, Markdown, Unity3D Asset, Javascript
 
           # Don’t group everything into “Other”
           plugin_languages_other: no
