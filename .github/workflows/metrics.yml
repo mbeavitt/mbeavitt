@@ -32,8 +32,8 @@ jobs:
           plugin_languages_colors: github
           plugin_languages_recent_load: 1000
           plugin_languages_recent_days: 365
-          plugin_languages_analysis_timeout: 30
-          plugin_languages_analysis_timeout_repositories: 15
+          plugin_languages_analysis_timeout: 240
+          plugin_languages_analysis_timeout_repositories: 100
 
           # Hide some noisy languages, but keep Shell
           plugin_languages_ignored: >
