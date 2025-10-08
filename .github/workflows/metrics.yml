@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          config_padding: 50
+          config_padding: 100
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: Europe/London
 
